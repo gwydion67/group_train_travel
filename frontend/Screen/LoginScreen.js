@@ -13,7 +13,7 @@ function LoginScreen() {
             <View style={{ marginTop: 50   }}>
                 <Image
                     style={{ width: 150, height: 100 , resizeMode:'contain' }}
-                    source={require('../Logo.png')}
+                    source={require('../assets/images/Logo.png')}
                 />
             </View>
             <View style={{ alignItems: "center", justifyContent: "center" , marginTop:20 }}>
