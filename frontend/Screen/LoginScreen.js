@@ -7,7 +7,6 @@ function LoginScreen() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigation = useNavigation();
- 
     return (
         <SafeAreaView style={{ flex: 1, alignItems: 'center' }}>
             <View style={{ marginTop: 50   }}>
@@ -49,7 +48,6 @@ function LoginScreen() {
                             placeholderTextColor={"gray"}
                             style={{
                                 color: "gray",
-
                                 width: 300,
                                 fontSize: email ? 16 : 16,
                             }}
@@ -81,7 +79,6 @@ function LoginScreen() {
                             placeholderTextColor={"gray"}
                             style={{
                                 color: "gray",
-
                                 width: 300,
                                 fontSize: email ? 16 : 16,
                             }}
@@ -109,10 +106,6 @@ function LoginScreen() {
                 </Pressable>
                 </View>
             </KeyboardAvoidingView>
-
-
-
-
         </SafeAreaView>
     )
 }
