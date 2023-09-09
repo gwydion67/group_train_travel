@@ -9,6 +9,7 @@
 import React from 'react';
 
 import {
+  
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -25,13 +26,17 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
+import Login from './Screen/Login';
 import NavStack from './Navigation/StackNavigator';
+import { hideNavigationBar } from 'react-native-navigation-bar-color';
 function App() {
+  hideNavigationBar();
   return (
-    
+
 <>
+<StatusBar translucent backgroundColor='transparent' />
   <NavStack />
+ {/* <Login /> */}
 </>
  
  
