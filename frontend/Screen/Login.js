@@ -54,7 +54,7 @@ navigation.navigate("Main")
                 />
                 <Pressable style={{justifyContent:'flex-end' , alignItems:'flex-end' , marginTop:85 , marginRight:10}} onPress={loginFunction}>
                   
-                    <Image source={require("./../right-arrow.png")} style={{height:30 , width:30 , opacity:0.8}}/>
+                    <Image source={require("../assets/right-arrow.png")} style={{height:30 , width:30 , opacity:0.8}}/>
                     
                 </Pressable>
             </View>
