@@ -5,7 +5,7 @@ const GreetScreen = () => {
     return (
         <SafeAreaView>
             <View style={styles.img}>
-                <image source={require('../assets/images/Logo.png')} />
+                <image source={require('../assets/Logo.png')} />
                 <View style={styles.text}>
                     <Text style={styles.title}>RideRails</Text>
                     <Text style={styles.content}>
