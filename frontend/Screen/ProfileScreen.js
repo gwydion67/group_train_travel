@@ -1,4 +1,4 @@
-import { Text  , View} from "react-native"
+import { Text  , View ,Image} from "react-native"
 import { useState } from "react";
 import { Dimensions } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
@@ -14,14 +14,17 @@ function ProfileScreen (){
 
 
     return (
-        <LinearGradient style={{ flex: 1, position:'relative',gap : 200  }} locations={[0.001, 0.5, 0.7, 1]} colors={['#CF9FFF', "white", "#DFFCF6", '#F4C2F4']} useAngle={true} angle={-135} angleCenter={{ x: 0.5, y: 0.5 }}>
-            
-            
-            <Text style={{color:'black' , position:'absolute' , zIndex:2 , fontSize : 40  , fontWeight:'200' , top:height/30 ,left:width/15}}><Text style={{color:'black' , position:'absolute' , zIndex:2 , fontSize : 40  , fontWeight:'400'}}>Hello,{`\n`}</Text>Ranjay Singh</Text>
-      
-        <View style={{position:'absolute' , backgroundColor:'white' , height:1.05*width , width:1.05*width , borderRadius:85 ,transform:[{rotate:'23deg'}] , top:-height/5.5 }}></View>
-    <View style={{borderColor:'black' ,  borderWidth:1 , borderRadius:100 , height:width/2.5 , width:width/2.5  , backgroundColor:'white' ,top : width/1.9 , left:width/1.8 }}></View>
-      </LinearGradient>
+        <View style={{flex:1 , position:'relative' , alignItems:'center',backgroundColor:'white' }}>
+        {/* <LinearGradient colors={['#CF9FFF', "white", "#DFFCF6", '#F4C2F4']} style={{ borderRadius:50 , height:height/4 , width:height/4} }></LinearGradient> */}
+        <Image source={require('../assets/bg.png')} style={{ position:'absolute' , zIndex:-1 ,  top : -700  , right: -2*width }} blurRadius={10}/>
+        <View style={{alignItems:'center' , backgroundColor:'rgba(255 , 230 , 230 , 0.1)' , position:'relative'  ,height:3*height/4 , width : width , borderRadius: 35 , borderColor:'white' , borderWidth: 1 , top : height/6 }}>
+   
+        <View style={{backgroundColor:'rgba(255 , 230 , 230 , 1)'  ,height:height/4.5 , width : height/4.5 , borderRadius: 200 , borderColor:'white' , borderWidth: 1 , position: 'absolute' , top: -height/9  }}>
+   </View>
+   
+</View>
+        
+         </View>
     )
 }
 

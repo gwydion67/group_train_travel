@@ -8,13 +8,16 @@ function HomeScreen (){
 
 
     return (
-    <View style={{flex:1 , position:'relative' , alignItems:'center' ,backgroundColor:'black' }}>
+    <View style={{flex:1 , position:'relative' , alignItems:'center' ,backgroundColor:'white' , borderColor: 'black' , borderWidth:2 }}>
 {/* <LinearGradient colors={['#CF9FFF', "white", "#DFFCF6", '#F4C2F4']} style={{ borderRadius:50 , height:height/4 , width:height/4} }></LinearGradient> */}
-<Image source={require('../bg2.jpg')} style={{height:height , width:width , position:'absolute' , zIndex:-1 , borderRadius:40}} />
- <View style={{ borderRadius: 30 , backgroundColor:'rgba(255, 255 , 255 , 0.4)', borderColor: 'rgb(255 , 255 , 255)' , height:height/1 , width: width/1 , top : height/20}}>
+<Image source={require('../assets/bg.png')} style={{ position:'absolute' , zIndex:0 ,  top : -750  , left: -350}}  />
+<View style={{backgroundColor:'rgba(255 , 230 , 230 , 0.2)'  ,height:height , width : width , borderRadius: 35 , borderColor:'white' , borderWidth: 1 , top: height/25   }}>
+   
+   <View style={{}}></View>
+   </View>
 
  </View>
-    </View>
+  
     )
 }
 

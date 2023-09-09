@@ -140,12 +140,7 @@ function RegisterScreen() {
                                 borderRadius: 5,
                             }}
                         >
-                            <Image
-                                style={{ width: 20, height: 20, resizeMode: 'contain', marginHorizontal: 10 }}
-                                source={{
-                                    uri: "https://img.icons8.com/material-outlined/24/lock-2.png",
-                                }}
-                            />
+                            
                             <TextInput
                                 value={confpassword}
                                 onChangeText={(text) => setConfpassword(text)}
