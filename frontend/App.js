@@ -29,14 +29,19 @@ import {
 import Login from './Screen/Login';
 import NavStack from './Navigation/StackNavigator';
 import { hideNavigationBar } from 'react-native-navigation-bar-color';
+import store from './Store';
+import { Provider } from 'react-redux';
 function App() {
   hideNavigationBar();
   return (
 
 <>
+<Provider store={store}>
+
 <StatusBar translucent backgroundColor='transparent' />
   <NavStack />
  {/* <Login /> */}
+</Provider>
 </>
  
  
