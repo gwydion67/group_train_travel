@@ -12,23 +12,23 @@ function Register() {
     const navigation = useNavigation();
     return (
 
-        <LinearGradient style={{ flex: 1, alignItems: 'center', justifyContent: 'center' ,gap : 200  }} locations={[0.001, 0.5, 0.7, 1]} colors={['#CF9FFF', "white", "#DFFCF6", '#F4C2F4']} useAngle={true} angle={-135} angleCenter={{ x: 0.5, y: 0.5 }}>
+        <LinearGradient style={{ flex: 1, alignItems: 'center', justifyContent: 'center' ,gap : 200  }}  colors={['#f2b6d7', "#fa8d90"]} useAngle={true} angle={90} angleCenter={{ x: 0.5, y: 0.5 }}>
 
-            <View style={{ height: 450, width: 300, borderRadius: 20, backgroundColor: 'rgba(255, 255 , 255 , 0.3)',borderColor:'rgba(255, 255 , 255 , 0.5)',borderWidth:1, paddingHorizontal: 20, paddingTop: 30  }}  >
-                <Text style={{ color: 'black', fontSize: 30, fontWeight: '400', paddingBottom: 0, }}>Register</Text>
-                <Text style={{ color: 'black', fontSize: 25, fontWeight: '200',marginTop: 0, paddingTop: 0, lineHeight: 24, }}>your account</Text>
+            <View style={{ height: 450, width: 300, borderRadius: 20, backgroundColor: 'rgba(255, 255 , 255 , 0.1)',borderColor:'rgba(255, 255 , 255 , 0.5)',borderWidth:1, paddingHorizontal: 20, paddingTop: 30  }}  >
+                <Text style={{ color: 'black', fontSize: 30, fontWeight: '500', paddingBottom: 0, }}>Register</Text>
+                <Text style={{ color: 'black', fontSize: 25, fontWeight: '300',marginTop: 0, paddingTop: 0, lineHeight: 24, }}>your account</Text>
                
                 <TextInput
                     value={email}
                     onChangeText={(text) => setEmail(text)}
-                    placeholderTextColor={"gray"}
+                    placeholderTextColor={"black"}
                     style={{
                         marginTop:40 , 
                         color:'black',
-                        backgroundColor: 'rgba(255 , 255 , 255 , 0.1)',
+                        backgroundColor: 'rgba(255 , 255 , 255 , 0)',
                       borderBottomColor:'black',
                       borderBottomWidth:1,
-                      fontWeight: '200',
+                      fontWeight: '300',
                        
                         width: '100%',
                         fontSize:  14,
@@ -38,14 +38,14 @@ function Register() {
                 <TextInput
                     value={password}
                     onChangeText={(text) => setPassword(text)}
-                    placeholderTextColor={"gray"}
+                    placeholderTextColor={"black"}
                     style={{
                         color:'black',
                         marginTop:20 , 
-                        backgroundColor: 'rgba(255 , 255 , 255 , 0.1)',
+                        backgroundColor: 'rgba(255 , 255 , 255 , 0)',
                       borderBottomColor:'black',
                       borderBottomWidth:1,
-                      fontWeight: '200',
+                      fontWeight: '300',
                        
                         width: '100%',
                         fontSize:  14,
@@ -55,14 +55,14 @@ function Register() {
                   <TextInput
                     value={confirmPassword}
                     onChangeText={(text) => setconfPassword(text)}
-                    placeholderTextColor={"gray"}
+                    placeholderTextColor={"black"}
                     style={{
                         color:'black',
                         marginTop:20 , 
-                        backgroundColor: 'rgba(255 , 255 , 255 , 0.1)',
+                        backgroundColor: 'rgba(255 , 255 , 255 , 0)',
                       borderBottomColor:'black',
                       borderBottomWidth:1,
-                      fontWeight: '200',
+                      fontWeight: '300',
                        
                         width: '100%',
                         fontSize:  14,
