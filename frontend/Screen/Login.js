@@ -29,7 +29,7 @@ useEffect(()=>{
 
             <View style={{ height: 450, width: 300, borderRadius: 20, backgroundColor: 'rgba(255, 255 , 255 , 0.1)',borderColor:'rgba(255, 255 , 255 , 0.5)',borderWidth:1, paddingHorizontal: 20, paddingTop: 30  }}  >
                 <Text style={{ color: 'black', fontSize: 30, fontWeight: '500', paddingBottom: 0, }}>Welcome</Text>
-                <Text style={{ color: 'black', fontSize: 25, fontWeight: '400',marginTop: 0, paddingTop: 0, lineHeight: 24, }}>back</Text>
+                <Text style={{ color: 'black', fontSize: 25, fontWeight: '300',marginTop: 0, paddingTop: 0, lineHeight: 24, }}>back</Text>
                 <Text style={{ color: 'black', marginTop: 30 ,fontWeight: '300', fontSize:14 }}>You have been missed!</Text>
                 <TextInput
                     value={email}

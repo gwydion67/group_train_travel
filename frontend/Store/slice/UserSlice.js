@@ -7,7 +7,7 @@ initialState : {
     isLoading : false , 
     error : null 
 
-} , 
+}, 
 
 
 

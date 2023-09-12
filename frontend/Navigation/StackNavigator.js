@@ -1,7 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Image, View } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
 import Login from '../Screen/Login';
 import HomeScreen from '../Screen/HomeScreen';
 import Register from '../Screen/Register';
@@ -26,13 +25,13 @@ function NavStack() {
             bottom: height / 50,
             left: 15,
             right: 15,
-            borderRadius: 50
-            ,
-
+          
+            borderBottomLeftRadius  :20 , 
+            borderBottomRightRadius : 20 , 
+            
             elevation: 0,
-            backgroundColor: 'rgba(255, 255 , 255 , 0.3)',
-            borderColor: 'rgba(255, 255, 255 , 0.8)',
-          }
+            backgroundColor: 'rgba(255, 255 , 255 ,0)',
+                    }
 
         }}
 
@@ -45,8 +44,8 @@ function NavStack() {
             focused ? (
 
               <View style={{ justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
-                <Image source={require('../assets/pink1.png')} style={{ height: 100, width: 100 }} />
-                <Image source={require('../assets/home.png')} style={{ height: 35, width: 35, resizeMode: 'contain', position: 'absolute' }} />
+                
+                <Image source={require('../assets/home.png')} style={{ backgroundColor:'', height: 35, width: 35, resizeMode: 'contain', position: 'absolute' }} />
               </View>
 
 
@@ -61,7 +60,7 @@ function NavStack() {
           tabBarIcon: ({ focused }) =>
             focused ? (
               <View style={{ justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
-                <Image source={require('../assets/cyan.png')} style={{ height: 80, width: 80 }} />
+              
 
                 <Image source={require('../assets/communication.png')} style={{ height: 50, width: 50, resizeMode: 'contain', opacity: 0.8, position: 'absolute' }} />
 
@@ -78,7 +77,7 @@ function NavStack() {
           tabBarIcon: ({ focused }) =>
             focused ? (
               <View style={{ justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
-                <Image source={require('../assets/purple.png')} style={{ height: 80, width: 80, top: 8, right: 3 }} />
+             
 
                 <Image source={require('../assets/user.png')} style={{ height: 35, width: 35, resizeMode: 'contain', opacity: 0.8, position: 'absolute' }} />
 

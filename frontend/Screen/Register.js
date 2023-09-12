@@ -78,7 +78,7 @@ function Register() {
             <View style={{flexDirection:'row' , fontSize:14 , marginTop:20}}>
                 <Text style={{color:'black',fontWeight: '200',}}>Already have an Account?</Text>
                 <Pressable onPress={()=>{navigation.navigate("Login")}}>
-                <Text style={{color:'skyblue'}}> Login</Text>
+                <Text style={{color:'black'}}> Login</Text>
                 </Pressable>
             </View>
         </LinearGradient>
