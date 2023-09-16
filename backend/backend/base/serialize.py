@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-
+from .models import *
 from rest_framework_simplejwt.tokens import RefreshToken
 
 
@@ -33,3 +33,14 @@ class UserserializerwithToken(Userserializer):
     def get_token(self, obj):
         token  = RefreshToken.for_user(obj)
         return str(token.access_token)
+
+
+class tripCardSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = tripcard
+        fields = '__all__'
+        
+class alreadyBookedCardSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = alreadybookedcard
+        fields = '__all__'

@@ -2,13 +2,24 @@ import { Text, View, Image, TextInput, KeyboardAvoidingView, Pressable, Keyboard
 import { useState, useEffect } from "react";
 import LinearGradient from 'react-native-linear-gradient';
 import { useNavigation } from "@react-navigation/native";
-
+import { useDispatch } from "react-redux";
 function Register() {
  
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setconfPassword] = useState("");
-    const registerFunction = ()=>{}
+    const dispatch = useDispatch();
+    const registerFunction = ()=>{
+        if (!email || !password ){
+            
+        }
+        else if(password != confirmPassword){
+
+        }
+        else {
+            dispatch()
+        }
+    }
     const navigation = useNavigation();
     return (
 
@@ -78,7 +89,7 @@ function Register() {
             <View style={{flexDirection:'row' , fontSize:14 , marginTop:20}}>
                 <Text style={{color:'black',fontWeight: '200',}}>Already have an Account?</Text>
                 <Pressable onPress={()=>{navigation.navigate("Login")}}>
-                <Text style={{color:'skyblue'}}> Login</Text>
+                <Text style={{color:'black'}}> Login</Text>
                 </Pressable>
             </View>
         </LinearGradient>
