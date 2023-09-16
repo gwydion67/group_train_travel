@@ -95,8 +95,8 @@ function NavStack() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login}  options={{ headerShown: false }}/>
         <Stack.Screen name="Main" component={BottomTabs} options={{ headerShown: false }} />
+        <Stack.Screen name="Login" component={Login}  options={{ headerShown: false }}/>
 
         <Stack.Screen name="Register" component={Register} options={{ headerShown: false }} />
 
