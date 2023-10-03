@@ -6,7 +6,7 @@ import { getTripCardThunk } from "../Store/thunks/card/thunkCard"
 const {height , width } = Dimensions.get('screen')
 function GroupScreen (){
 const dispatch = useDispatch()
-
+// aoifioafihh
     const  {
       
         tripCards ,
